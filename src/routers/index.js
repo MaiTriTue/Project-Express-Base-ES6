@@ -1,5 +1,5 @@
-import newRouter from './news';
-import siteRouter from './site';
+import newRouter from './news.js';
+import siteRouter from './site.js';
 
 function router(app) {
     // Cấu hình đường dẫn chính: /news , ...
@@ -8,4 +8,4 @@ function router(app) {
     app.use('/', siteRouter);
 }
 
-module.exports = router;
+export  default router;

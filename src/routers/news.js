@@ -1,5 +1,5 @@
 import express from'express';
-import newsController from '../app/controllers/newscontroller';
+import newsController from '../app/controllers/newscontroller.js';
 
 const router = express.Router();
 
@@ -10,4 +10,5 @@ const router = express.Router();
 router.get('/:slug', newsController.show);
 router.get('/', newsController.index);
 
-module.exports = router;
+export  default router;
+// module.exports = router;

@@ -1,5 +1,5 @@
 import express from'express';
-import siteController from '../app/controllers/siteController';
+import siteController from '../app/controllers/siteController.js';
 
 const router = express.Router();
 
@@ -10,4 +10,4 @@ const router = express.Router();
 router.get('/:slug', siteController.search);
 router.get('/', siteController.index);
 
-module.exports = router;
+export  default  router;

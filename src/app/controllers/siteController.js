@@ -22,4 +22,5 @@ class SiteController {
     }
 }
 
-module.exports = new SiteController();
+export default new SiteController();
+// module.exports = new SiteController();
