@@ -3,7 +3,7 @@
 class SiteController {
     //[GET] /
 
-    index(req, res) {
+    async index(req, res) {
         // connection.connect();
 
         // connection.query('select * from Users;', (err, rows, fields) => {
@@ -17,7 +17,7 @@ class SiteController {
     }
 
     //[GET] /news/:slug
-    search(req, res) {
+    async search(req, res) {
         res.render('search');
     }
 }

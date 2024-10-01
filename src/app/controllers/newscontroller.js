@@ -1,12 +1,12 @@
 class NewsController {
     //[GET] /new
 
-    index(req, res) {
+    async index(req, res) {
         res.render('news');
     }
 
     //[GET] /news/:slug
-    show(req, res) {
+    async show(req, res) {
         res.render('news detail');
     }
 }
